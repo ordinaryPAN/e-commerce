@@ -1,0 +1,14 @@
+###服务端口号(本身是一个web项目)
+server:
+  port: 9081
+
+spring:
+  datasource:
+    druid:
+      connection-init-sqls: set names utf8mb4
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/gulimail?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+
